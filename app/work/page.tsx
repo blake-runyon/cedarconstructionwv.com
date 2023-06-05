@@ -1,4 +1,5 @@
 import ImageCard from "./ImageCard"
+import { workCards } from "./work.data"
 
 export const metadata = {
   title: 'Our Work - Cedar Construction',
@@ -10,14 +11,10 @@ export default function Work() {
   return (
     <div className="mx-2">
       <h1 className="text-4xl text-center font-bold my-3">Our Work</h1>
-      <div className="flex">
-        <ImageCard title="New Window Install" src="image0" />
-        <ImageCard title="New Title Install" src="image1" />
-        <ImageCard title="New Vanity Install" src="image3" />
-      </div>
-      <div className="flex">
-        <ImageCard title="New Deck" src="image6" />
-        <ImageCard title="New Deck" src="image7" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto text-center">
+        { workCards.map((card) => (
+          <ImageCard title={card.title} src={card.src} />
+        ))}
       </div>
     </div>
   )

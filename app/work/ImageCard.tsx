@@ -10,7 +10,7 @@ export default function ImageCard({ title, src }: any) {
   }, [])
 
   return (
-    <div className="bg-gray-100 w-3/12 p-2 rounded-xl shadow-lg border-amber-700 border-2 mx-auto my-2">
+    <div className="bg-gray-100 p-2 rounded-xl shadow-lg border-amber-700 border-2 mx-auto my-2">
       <Image 
         src={"/images/" + src + ".jpeg"}
         alt={title}

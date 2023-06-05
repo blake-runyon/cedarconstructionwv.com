@@ -18,6 +18,7 @@ export default function Navbar() {
             <Link
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
               href="/"
+              onClick={() => setNavbarOpen(false)}
             >
               <Image 
                 src="/logowhite.png"
@@ -46,14 +47,16 @@ export default function Navbar() {
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="/about"
+                  onClick={() => setNavbarOpen(false)}
                 >
-                  <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About</span>
+                  <span className="ml-2">About</span>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="/work"
+                  onClick={() => setNavbarOpen(false)}
                 >
                   <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Our Work</span>
                 </Link>
@@ -62,6 +65,7 @@ export default function Navbar() {
                 <Link
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="/contact"
+                  onClick={() => setNavbarOpen(false)}
                 >
                   <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact Us</span>
                 </Link>
