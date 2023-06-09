@@ -16,7 +16,7 @@ export default function About() {
         </p>
         <p className="py-2 text-lg">
           At Cedar Construction, we understand that every project is unique and requires personalized attention. 
-          Whether you have a small residential renovation or a large-scale commercial project, we have the experience and 
+          Whether you need a new door or a large scale residential renovation, we have the experience and 
           expertise to bring your vision to life. No project is too big or too small for us.
         </p>
         <p className="py-2 text-lg">

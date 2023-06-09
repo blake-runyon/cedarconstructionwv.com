@@ -5,7 +5,7 @@ interface WorkCard {
 
 export const workCards: WorkCard[] = [
   {
-    title: "New Window Install",
+    title: "Restoration",
     src: "image0"
   }, 
   {

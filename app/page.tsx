@@ -1,6 +1,8 @@
 import styles from './home.module.css'
 import IconBox from '@/components/IconBox'
 import { services } from './services.data'
+import { socials } from './contact/socials.data'
+import SocialBox from './contact/SocialBox'
 
 export default function Home() {
   return (
@@ -26,6 +28,11 @@ export default function Home() {
            <IconBox icon={service.icon} title={service.name} description={service.description} /> 
           ))}
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {socials.map((v) => (
+          <SocialBox icon={v.icon} header={v.header} description={v.description} button={v.button} link={v.link} />
+        ))}
       </div>
     </main>
   )

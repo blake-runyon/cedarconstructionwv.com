@@ -1,7 +1,6 @@
 "use client"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBarcode } from "@fortawesome/free-solid-svg-icons"
 
 export default function IconBox({ icon, title, description }: any) {
   return (
