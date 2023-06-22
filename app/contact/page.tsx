@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div>
+    <div className="my-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {socials.map((v) => (
           <SocialBox icon={v.icon} header={v.header} description={v.description} button={v.button} link={v.link} />

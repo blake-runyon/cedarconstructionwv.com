@@ -14,17 +14,17 @@ export default function Navbar() {
   return (
     <nav className="relative flex flex-wrap items-center justify-between px-2 bg-black">
         <div className="container px-4 flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <div className="w-full relative flex justify-center text-center lg:w-auto lg:static lg:block lg:justify-start bg-white mr-4 my-2 p-3 rounded-3xl">
             <Link
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="text-sm font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white"
               href="/"
               onClick={() => setNavbarOpen(false)}
             >
               <Image 
-                src="/logowhite.png"
+                src="/logo.png"
                 alt='logo'
-                width={75}
-                height={50}
+                width={125}
+                height={100}
               />
             </Link>
             <button
