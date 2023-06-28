@@ -14,9 +14,9 @@ export default function Navbar() {
   return (
     <nav className="relative flex flex-wrap items-center justify-between px-2 bg-black">
         <div className="container px-4 flex flex-wrap items-center justify-between">
-          <div className="w-full relative flex justify-center text-center lg:w-auto lg:static lg:block lg:justify-start bg-white mr-4 my-2 p-3 rounded-3xl">
+          <div className="w-full relative flex justify-center text-center lg:w-auto lg:static lg:block lg:justify-start mr-4 my-2 p-3 rounded-3xl">
             <Link
-              className="text-sm font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white"
+              className="text-sm font-bold leading-relaxed inline-block whitespace-nowrap uppercase text-white bg-white p-3 rounded-3xl"
               href="/"
               onClick={() => setNavbarOpen(false)}
             >
